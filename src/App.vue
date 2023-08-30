@@ -55,7 +55,7 @@ import NewsView from '@/views/NewsView.vue';
     font-weight: 700;
     color: var(--color-black-90);
 
-    background-image: url('src/assets/hero.svg');
+    background-image: url('/src/assets/hero.svg');
     background-position: bottom;
 }
 
