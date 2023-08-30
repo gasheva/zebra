@@ -5,7 +5,7 @@ const props = defineProps({
 </script>
 
 <template>
-<span :class="$style.tag">{{props.label}}</span>
+    <span :class="$style.tag">{{ props.label }}</span>
 </template>
 
 <style module>

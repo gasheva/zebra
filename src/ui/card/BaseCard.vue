@@ -5,10 +5,10 @@ const props = defineProps({
 </script>
 
 <template>
-<div :class="$style.card">
-<img v-if="props.imgSrc" :src="imgSrc">
-<slot/>
-</div>
+    <div :class="$style.card">
+        <img v-if="props.imgSrc" :src="imgSrc">
+        <slot/>
+    </div>
 </template>
 
 <style module>
@@ -20,8 +20,5 @@ const props = defineProps({
     border: 1px solid #0F62FE;
     border-radius: 16px;
     overflow: hidden;
-}
-.card_date {
-
 }
 </style>

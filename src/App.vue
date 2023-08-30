@@ -1,20 +1,19 @@
 <script setup>
 import LogoIcon from '@/components/icons/LogoIcon.vue';
 import NewsView from '@/views/NewsView.vue';
-
 </script>
 
 <template>
-  <header>
-      <div :class="$style.wrapper">
-          <logo-icon :class="$style.logo"/>
-      </div>
-      <div :class="$style.hero">
-          <div :class="$style.wrapper">
-              <span>Новости</span>
-          </div>
-      </div>
-  </header>
+    <header>
+        <div :class="$style.wrapper">
+            <logo-icon :class="$style.logo"/>
+        </div>
+        <div :class="$style.hero">
+            <div :class="$style.wrapper">
+                <span>Новости</span>
+            </div>
+        </div>
+    </header>
 
 
     <main>
@@ -44,6 +43,7 @@ import NewsView from '@/views/NewsView.vue';
     margin-top: 40px;
     margin-bottom: 40px;
 }
+
 .hero {
     display: flex;
     align-items: end;
@@ -69,7 +69,7 @@ import NewsView from '@/views/NewsView.vue';
     margin-top: 16px;
 }
 
-.footer_info{
+.footer_info {
     display: flex;
     flex-direction: column;
     color: var(--color-black-40);

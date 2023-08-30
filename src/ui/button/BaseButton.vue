@@ -6,7 +6,7 @@ const emit = defineEmits(['click']);
 </script>
 
 <template>
-<button :class="$style.button" @click="emit('click')">{{props.label}}</button>
+    <button :class="$style.button" @click="emit('click')">{{ props.label }}</button>
 </template>
 
 <style module>
