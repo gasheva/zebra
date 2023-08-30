@@ -13,7 +13,7 @@ const currentPageNumber = ref(1);
 
 onMounted(async () => {
     const result = await getNews();
-    if(result.failed) {
+    if (result.failed) {
         error.value = result.error;
         return;
     }
@@ -24,7 +24,7 @@ onMounted(async () => {
 const onLoad = async () => {
     currentPageNumber.value++;
     const result = await getNews(currentPageNumber.value);
-    if(result.failed) {
+    if (result.failed) {
         error.value = result.error;
         return;
     }
@@ -43,7 +43,7 @@ const onLoad = async () => {
                 <base-button :class="$style.news_button" label="Загрузить ещё" @click="onLoad"/>
             </div>
         </template>
-        <div :class="$style.error" v-else>{{error}}</div>
+        <div v-else :class="$style.error">{{ error }}</div>
     </div>
 </template>
 
@@ -56,12 +56,15 @@ const onLoad = async () => {
     max-width: 100%;
     margin-top: 64px;
 }
+
 .news_footer {
     margin: 72px 0;
 }
+
 .news_button {
     margin: 0 auto;
 }
+
 .error {
     margin-top: 64px;
     font-size: 24px;
