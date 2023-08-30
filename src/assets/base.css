@@ -1,0 +1,25 @@
+/* color variables for this project */
+:root {
+  --color-red: red;
+  --color-black-90: #17171A;
+  --color-black-85: #222327;
+  --color-black-40: #81899D;
+  --color-black-30: #A1A7B5;
+  --color-background-blue-pale: #F0F6FE;
+  --color-link: #0C5BEF;
+  --color-link-dark: #00133A;
+
+  --color-button-bordered-default: #002DBF;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+}
